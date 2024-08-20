@@ -43,9 +43,9 @@
         </ul>
 
         <form class="text-center">
-          <button class="btn btn-outline-success me-2 createBtn" type="submit">
+          <router-link to="/signup" class="btn btn-outline-success me-2 createBtn" type="submit">
             Create Account
-          </button>
+          </router-link>
           <router-link to="/login" class="btn btn-outline-success loginBtn" type="submit">
             Login
           </router-link>

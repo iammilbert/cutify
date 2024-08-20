@@ -62,22 +62,31 @@
               </div>
             </div>
 
-            <div class="form-group form-check mt-4">
-              <input type="checkbox" class="form-check-input" id="rememberMe" v-model="form.rememberMe">
-              <label class="form-check-label" for="rememberMe">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary w-100 mt-4">Sign up</button>
-
-
-                    <div class="form-group form-check mt-4">
-              <input type="checkbox" class="form-check-input" id="rememberMe">
-              <label class="form-check-label" for=""> By registering you are agreeing to our Terms of use and Privacy Policy</label>
-            </div>
           </form>
 
+          <div class="text-left mt-5">
+            <input type="checked" class="form-check-input" id="">
+              <label class="form-check-label me-3" for=""> At least a character strong</label>
+                <input type="checkbox" class="form-check-input me-1" id="">
+              <label class="form-check-label" for=""> One lower case character</label>
+          </div>
+
+          <div class="text-left">
+            <input type="checkbox" class="form-check-input" id="">
+              <label class="form-check-label me-3 me-1" for=""> One upper case </label>
+              <input type="checkbox" class="form-check-input" id="">
+              <label class="form-check-label" for=""> A symbol or special character</label>
+              
+          </div>
+            <div class="form-group form-check mt-4">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-labe" for="" style="font-size: 15px;"> By registering you are agreeing to <router-link to="#">our Terms of use</router-link> and <router-link to="#">Privacy Policy</router-link></label>
+            </div>
+                        <div class="form-group form-check mt-4">
+            <button type="submit" class="btn btn-primary w-100 mt-4">Sign up</button>
+            </div>
           <div class="text-center mt-4">
-            <p>Don't have an account? <a href="#">Already Sign up? Login Here</a></p>
-            <a href="#" class="btn btn-link">Sign up as a professional</a>
+            Already have an account? <router-link to="/login">Login</router-link>
           </div>
         </div>
       </div>
@@ -157,7 +166,7 @@ export default {
 
 .login-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: none;
